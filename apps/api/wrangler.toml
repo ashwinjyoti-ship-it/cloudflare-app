@@ -6,4 +6,5 @@ compatibility_date = "2024-04-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "my-app-db"
-database_id = "replace-with-your-database-id"
+database_id = "bb2b1068-c787-4a1b-8637-3d67353d2dae"
+migrations_dir = "drizzle"

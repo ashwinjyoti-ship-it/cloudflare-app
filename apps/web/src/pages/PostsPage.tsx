@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import PostList from '../components/PostList';
 import PostForm from '../components/PostForm';
-import { createPost, updatePost, deletePost, type Post } from '../lib/api';
+import { createPost, updatePost, deletePost, type Post, type CreatePostData } from '../lib/api';
 
 type Toast = {
   id: number;
@@ -42,7 +42,7 @@ export default function PostsPage() {
     setEditingPost(null);
   }
 
-  async function handleSubmit(data: { title: string; content: string; author: string }) {
+  async function handleSubmit(data: CreatePostData) {
     setIsSubmitting(true);
     try {
       if (editingPost) {

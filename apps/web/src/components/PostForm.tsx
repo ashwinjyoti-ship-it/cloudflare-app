@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import type { CreatePostData, UpdatePostData, Post } from '../lib/api';
+import type { CreatePostData, Post } from '../lib/api';
 
 interface PostFormProps {
-  onSubmit: (data: CreatePostData | UpdatePostData) => void;
+  onSubmit: (data: CreatePostData) => void;
   onCancel: () => void;
   initialData?: Post | null;
   submitLabel?: string;
